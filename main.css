@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: cursive;
+}
+
+header,
+section {
+  height: 100vh;
+}
+
+/*Navigation */
+#navbar {
+  background-color: #6f1a07;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Header */
+#welcome-section {
+  background-color: #f7f3e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 2.5rem;
+}
+
+/* Projects */
+#projects {
+  background-color: #af9164;
+}
+
+.projectsHeader {
+  font-size: 2rem;
+  padding: 5vh 0 2vh 0;
+  text-align: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  background-color: #b3b6b7;
+  width: 325px;
+  height: 400px;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 90%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+
+.project-tile a {
+  color: black;
+}
+
+/* Contact Section*/
+#contact {
+  background-color: #f7f3e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+}
+
+#contact p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.contactContainer li {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* Footer*/
+footer {
+  background-color: #6f1a07;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 50px;
+}
+
+footer a {
+  color: white;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  display: inline;
+  background-color: aquamarine;
+}
+
+@media (min-width: 250px) {
+  #projects {
+    height: auto;
+  }
+
+  @media (min-width: 800px) {
+    #contact h2 {
+      font-size: 3.5rem;
+    }
+
+    #contact p {
+      font-size: 2rem;
+    }
+  }
+}
